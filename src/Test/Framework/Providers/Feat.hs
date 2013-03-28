@@ -32,7 +32,11 @@ data PropertyStatus = PropertyOK
                     | PropertyFalsifiable String
                     -- ^ The property was not true. The strings 
                     --   are the reason and the output.
-                    deriving(Show, Eq)
+                    deriving(Eq)
+                    
+instance Show PropertyStatus where
+    show PropertyOK              = "Property OK"
+    show (PropertyFalsifiable x) = "Property failed with " ++ x
 
 propertySucceeded :: PropertyStatus -> Bool
 propertySucceeded s = case s of

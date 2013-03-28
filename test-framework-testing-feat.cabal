@@ -2,7 +2,7 @@
 -- further documentation, see http://haskell.org/cabal/users-guide/
 
 name:                test-framework-testing-feat
-version:             0.1.0.0
+version:             0.1.0.1
 synopsis:            A test framework provider for testing-feat
 description:         A test provider for testing-feat copied from test-framework-quickcheck2 by Max Bolingbroke
 homepage:            http://github.com/jfischoff/test-framework-testing-feat
